@@ -1,21 +1,18 @@
 const express = require('express');
-const todoRoutes = require('./todo.js');
+const todosRoutes = require('./routes/data');
 const app = express();
 const port = 3000;
 
-app.use(express.json());
-
-app.use('/todos', todoRoutes);
+app.use('/todos', todosRoutes);
 app.set('view engine', 'ejs');
+app.get('/', (req, res) => {
+    res.render('index');
+});
 
-app.get('/contact', (req, res) => {
+app.get('/contact', (req, res)=>{
     res.render('contact');
-});
+})
 
-app.use((req, res) => {
-    res.status(404).send('Au Ah Gelap');
-});
-
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}/`);
+app.listen(port,()=> {
+    console.log(`server berjalan di http://localhost:${port}`);
 });
