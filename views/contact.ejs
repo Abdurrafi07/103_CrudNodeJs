@@ -1,38 +1,56 @@
-<div class="container mt-5">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card mb-3">
-          <div class="card-header">
-            <h5 class="card-title">Contact Us</h5>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
+<link rel="stylesheet" href="/css/stylesContact.css">
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <!-- Form Section -->
+    <div class="col-md-6">
+      <div class="card mb-3">
+        <div class="card-header">
+          <h5 class="card-title">Contact Us</h5>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-3">
-          <div class="card-header">
-            <h5 class="card-title">Description</h5>
-          </div>
-          <div class="card-body">
-            <p>Node.js adalah sebuah platform yang memungkinkan kita menjalankan kode JavaScript di luar lingkungan browser. Bayangkan, jika biasanya JavaScript hanya berjalan di dalam browser untuk membuat halaman web interaktif, dengan Node.js kita bisa menggunakan JavaScript untuk membangun aplikasi server-side yang lebih kompleks.</p>
-          </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
       </div>
     </div>
+
+    <!-- Description Section -->
+    <div class="col-md-6">
+      <div class="card mb-3">
+        <div class="card-header">
+          <h5 class="card-title">Description</h5>
+        </div>
+        <div class="card-body">
+          <p>Kami di HangryHamster selalu senang mendengar dari Anda! Apakah Anda memiliki pertanyaan, saran, atau ingin memberikan umpan balik tentang pengalaman Anda dengan kami? Kami siap membantu Anda!</p>
+        </div>
+      </div>
+      
+      <!-- New Image Section (same size as Description Card) -->
+      <div class="card mb-3">
+        <div class="card-body text-center">
+          <img src="/images/contact.jpg" alt="Contact Us" class="contact-img">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- Footer -->
+<link rel="stylesheet" href="/css/stylesFoot.css">
+<footer class="footer">
+    <p>&copy; 2024 HangryHamster. Semua hak dilindungi.</p>
+</footer>

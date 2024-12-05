@@ -1,13 +1,22 @@
-<h1>Sign Up</h1>
-<form action="/signup" method="POST">
-    <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="username" name="username" required>
+<link rel="stylesheet" href="/css/stylesSignUp.css">
+
+<div class="container">
+    <div class="form-container">
+        <img src="/images/hangrylogo.webp" alt="GitHub Cat" class="logo">
+        <h2>Sign Up</h2>
+        <p> Selamat Datang</p>
+        <form action="/signup" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <p>Sudah Punya Akun?</p>
+            <a href="/login" class="forgot-password">Sing In</a>
+            <button type="submit">Sign Up</button>
+        </form>
     </div>
-    <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" name="password" required>
-    </div>
-    <button type="submit" class="btn btn-primary">Login</button>
-</form>
-<p>Sudah punya akun? <a href="/login">Klik di sini</a>.</p>
+</div>

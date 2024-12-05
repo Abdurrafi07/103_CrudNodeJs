@@ -1,0 +1,6 @@
+/* Styling for contact image */
+.contact-img {
+    width: 26%; /* Make the image take full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners if desired */
+}

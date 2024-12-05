@@ -1,0 +1,25 @@
+/* General Body Styling */
+html, body {
+    height: 100%; /* Full height of the screen */
+    margin: 0; /* Remove default margin */
+}
+
+/* Make the body a flex container to push footer to the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}

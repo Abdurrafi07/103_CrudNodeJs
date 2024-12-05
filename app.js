@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path')
 const todosRoutes = require('./routes/tododb.js');
 const app = express();
 require('dotenv').config();
@@ -25,6 +26,9 @@ app.use(session({
     saveUninitialized: false,
     cookie: { secure: false } // Set ke true jika menggunakan HTTPS
 }));
+
+// Set static file path
+app.use(express.static(path.join(__dirname,'public')))
 
 app.use('/',authRoutes)
 

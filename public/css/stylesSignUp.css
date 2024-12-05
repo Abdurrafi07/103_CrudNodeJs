@@ -1,0 +1,65 @@
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 60px; /* Memberikan jarak dengan navbar */
+    width: 100%;
+    max-width: 400px; /* Membatasi lebar form agar tidak terlalu lebar */
+    margin-left: auto;
+    margin-right: auto; /* Mengatur posisi form agar terpusat */
+}
+
+/* Mengubah gaya untuk membuat teks dan link berada di samping */
+.form-container p {
+    display: inline-block; /* Menempatkan teks dan link dalam satu baris */
+    margin-right: 10px; /* Memberikan jarak antara teks dan link */
+    font-size: 1rem; /* Ukuran font normal */
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Menambahkan padding sedikit lebih besar agar form memanjang */
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+.forgot-password {
+    display: inline-block; /* Agar link berada di samping teks */
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
